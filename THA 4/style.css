@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.outercircle{
+    background-color: red;
+    /* border: 1px solid black;  */
+
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innercircle{
+    background-color: white;
+    /* border: 1px solid black; */
+    width: 450px;
+    height: 450px;
+    border-radius: 450px;
+    box-shadow: 0 0 5px 5px #bcbcbc; 
+     /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+}
+
+.hand{
+    border: 2px solid black;
+    background-color: black;
+    width: 210px;
+  position: absolute;
+    top: 50%;
+    transform: translate(109%, -50%); 
+    
+}
+
+.hand2{
+    border: 2px solid black;
+    background-color: black;
+    width: 180px;
+  position: absolute;
+    top:70%;
+      transform: translate(77.9%, -50%) rotate(90deg);
+      
+
+}
+.hand3{
+    border: 2px solid black;
+    background-color: black;
+    width: 150px;
+  position: absolute;
+    top:59.5%;
+      transform: translate(142%, 20%) rotate(37deg);
+      
+
+}
+.x{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    /* margin-left: ;
+    -ms-transform: translateY(-50%); */
+    transform: translate(-50%, -50%); 
+}
