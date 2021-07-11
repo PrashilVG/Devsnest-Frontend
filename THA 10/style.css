@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0e17;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 840px;
+}
+
+.card {
+  margin: 5px;
+  height: 200px;
+  width: 200px;
+  transition: transform 1s;
+}
+
+.flip-card {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transition: transform 1s;
+}
+
+.front-face,
+.back-face {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #fffffe;
+  backface-visibility: hidden;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
