@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>TO-DO</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="text-center text-light my-4">
+        <h1 class="mb-4">TODO List</h1>
+        <form class="add text-center my-4">
+          <input
+            type="text"
+            class="form-control m-auto"
+            name="add"
+            placeholder="Add New Task"
+            autocomplete="off"
+          />
+        </form>
+      </header>
+      <ul class="list-group todos mx-auto text-light">
+        <li class="list-group-item">
+          <span>Buy milk</span>
+          <img class="delete" src="./Delete.svg" />
+        </li>
+        <li class="list-group-item">
+          <span>Mariocart</span>
+          <img class="delete" src="./Delete.svg" />
+        </li>
+        <li class="list-group-item">
+          <span>Pay bills!!! :(</span>
+          <img class="delete" src="./Delete.svg" />
+        </li>
+      </ul>
+    
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
