@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+:root {
+  --author-text: #a8a8a8;
+  --text-color: #ffffff;
+  --card-background: #24282e;
+  --background-body: #1f1f1f;
+  --button-color: #3f00fd;
+  --ribbon-before: #000000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: var(--background-body);
+  color: var(--text-color);
+  padding: 2rem;
+}
+
+.quote-wrapper {
+  position: relative;
+  background-color: var(--card-background);
+  border-radius: 20px;
+  padding: 4rem 1.5rem;
+  -webkit-box-shadow: 0 5px 15px -10px #000;
+  -moz-box-shadow: 0 5px 15px -10px #000;
+  box-shadow: 0 5px 15px -10px #000;
+}
+
+.quote-wrapper h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.quote-wrapper blockquote {
+  padding: 1.4rem 0;
+  font-weight: 300;
+}
+
+.quote-wrapper cite {
+  display: block;
+  font-style: normal;
+  margin-left: 16rem;
+  margin-bottom: 1rem;
+  color: var(--author-text);
+}
+
+#gen-new-quote {
+  font-size: 1.1rem;
+  border: none;
+  background-color: var(--button-color);
+  color: #fffffe;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  outline: 0;
+}
+
+#gen-new-quote:hover {
+  transition: 0.3s;
+  -moz-box-shadow: 0 5px 15px -10px #000;
+  -webkit-box-shadow: 0 5px 15px -10px #000;
+  box-shadow: 0 5px 15px -10px #000;
+}
+
+.ribbon2 {
+  width: 60px;
+  padding: 10px 0;
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  text-align: center;
+  border-top-left-radius: 3px;
+  background: var(--button-color);
+  color: #fffffe;
+}
+.ribbon2:before {
+  height: 0;
+  width: 0;
+  right: -5.5px;
+  top: 0.1px;
+  border-bottom: 6px solid var(--ribbon-before);
+  border-right: 6px solid transparent;
+}
+.ribbon2:before,
+.ribbon2:after {
+  content: "";
+  position: absolute;
+}
+.ribbon2:after {
+  height: 0;
+  width: 0;
+  bottom: -29.5px;
+  left: 0;
+  border-left: 30px solid var(--button-color);
+  border-right: 30px solid var(--button-color);
+  border-bottom: 30px solid transparent;
+}
+
+@media screen and (min-width: 680px) {
+  .quote-wrapper {
+    width: 600px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --author-text: #272343;
+    --text-color: #2d334a;
+    --card-background: #fffffe;
+    --background-body: #e3f6f5;
+    --button-color: #272343;
+    --ribbon-before: #7a6fc0;
+  }
+}

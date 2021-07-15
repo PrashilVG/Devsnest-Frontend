@@ -1,10 +1,9 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
-const search = document.querySelector('.search input')
 
 const generateTemplate = todo =>{
     const html = `<li
-    class="list-group-item d-flex justify-content-between align-item-center"
+    class="list-group-item "
   >
     <span>${todo}</span>
     <img class="delete" src="./Delete.svg" />
