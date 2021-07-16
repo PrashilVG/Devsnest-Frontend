@@ -1,0 +1,36 @@
+:root {
+    --body-bg-color: #16161a;
+    --text-color: #fffffe;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: var(--body-bg-color);
+    text-align: center;
+    height: 90vh;
+    color: var(--text-color);
+    font-size: 1rem;
+  }
+  
+  h2,
+  div,
+  p,
+  button {
+    margin: 1rem;
+  }
+  
+  button {
+    padding: 0.5rem;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --body-bg-color: #e3f6f5;
+      --text-color: #272343;
+    }
+  }
