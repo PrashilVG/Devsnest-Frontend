@@ -1,0 +1,43 @@
+:root {
+    --background-color: #16161a;
+    --highlight: #7f5af0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+  }
+  
+  .container {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    border: 2px solid var(--highlight);
+    border-radius: 5px;
+  }
+  
+  .pointer {
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background: var(--highlight);
+    display: none;
+    pointer-events: none;
+    border-radius: 5px;
+  }
+  
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background-color: #fffffe;
+      --highlight: #272343;
+    }
+  }
